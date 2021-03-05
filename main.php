@@ -4,9 +4,13 @@
 
   Receiving SMS using 2-Way SMS & PHP
 
-  This example illustrates receiving a SMS MO (Mobile Originated) sent by a mobile subscriber to a shortcode using SMSLink - 2-Way SMS - https://www.smslink.ro/two-way/
+  This example illustrates receiving a SMS MO (Mobile Originated) sent by a mobile subscriber to a shortcode using 
+  SMSLink - 2-Way SMS - https://www.smslink.ro/two-way/
 
-  This script should be availabile to a public URL using HTTP/HTTPS protocol and must accept HTTP(S) requests from SMSLink. In case the HTTP(S) request sent by SMSLink cannot be completed (1) due to a connection error (ie. Connection Timeout etc.) or (2) due to a returned HTTP Status Code between 400 and 599 (id. 404 Not Found, 500 Internal Server Error samd.), SMSLink will retry resenting the HTTP(S) request for 2 times within the following 2 hours.
+  This script should be availabile to a public URL using HTTP/HTTPS protocol and must accept HTTP(S) requests from SMSLink. 
+  In case the HTTP(S) request sent by SMSLink cannot be completed (1) due to a connection error (ie. Connection Timeout etc.) or 
+  (2) due to a returned HTTP Status Code between 400 and 599 (id. 404 Not Found, 500 Internal Server Error samd.), SMSLink will 
+  retry resending the HTTP(S) request for 2 times within the following 2 hours.
 
 */
 
@@ -69,10 +73,12 @@ if ((isset($_GET["sender"])) and
 
     Write the SMS received to a text file
 
-      Please note that this is for example purpose only and the file(s) below must be not be publicly accessible. If you will choose to write the SMS received to file(s) you must enable access restrictions and deny access from public to the respective file(s) and you must disable directory listing on the directory where the files are stored.
+      Please note that this is for example purpose only and the file(s) below must be not be publicly accessible. If you will 
+      choose to write the SMS received to file(s) you must enable access restrictions and deny access from public to the respective 
+      file(s) and you must disable directory listing on the directory where the files are stored.
 
   */
-  
+
   $handler = fopen("sms-mobile-originated-".date("d-m-Y", $timestamp)."txt", "a+");
 
   fwrite($handler, 
@@ -95,7 +101,9 @@ if ((isset($_GET["sender"])) and
 
     (1) Using SMSLink - SMS Gateway API, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
 
-    (2) Using the output of this script, by writing the desired response below, if you enable this coresponding option in 2-Way SMS - 2-Way SMS Campaigns - Settings. In this case the SMSLink will read the script output and will send an SMS to the sender with the output text. Please note that the output should be plain text (you should not output any HTML code).
+    (2) Using the output of this script, by writing the desired response below, if you enable this coresponding option in 2-Way SMS,
+     2-Way SMS Campaigns - Settings. In this case the SMSLink will read the script output and will send an SMS to the sender with 
+     the output text. Please note that the output should be plain text (you should not output any HTML code).
 
   */
 
