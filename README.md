@@ -1,6 +1,8 @@
 # Example for receiving SMS using 2-Way SMS and PHP
 
-This is an example for receiving a SMS MO (Mobile Originated) sent by a mobile subscriber to a shortcode using SMSLink - [2-Way SMS](https://www.smslink.ro/2-way-sms.html). SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to more than 168 countries and more than 1000 mobile operators worldwide. 
+This is an example for receiving a SMS MO (Mobile Originated) sent by a mobile subscriber to a shortcode using SMSLink - [2-Way SMS](https://www.smslink.ro/2-way-sms.html). 
+
+SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to more than 168 countries and more than 1000 mobile operators worldwide. 
 
 ## Requirements & Usage
 
