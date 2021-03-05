@@ -65,6 +65,14 @@ if ((isset($_GET["sender"])) and
   */
   $network_name = $_GET["network_name"]; 
 
+  /*
+
+    Write the SMS received to a text file
+
+      Please note that this is for example purpose only and the file(s) below must be not be publicly accessible. If you will choose to write the SMS received to file(s) you must enable access restrictions and deny access from public to the respective file(s) and you must disable directory listing on the directory where the files are stored.
+
+  */
+  
   $handler = fopen("sms-mobile-originated-".date("d-m-Y", $timestamp)."txt", "a+");
 
   fwrite($handler, 
@@ -79,6 +87,24 @@ if ((isset($_GET["sender"])) and
 
   fclose($handler);
 
+  /*
+
+    Return the response to the request
+
+    For each received SMS you may send a SMS response to the sender (mobile subscriber) using any of the following methods:
+
+    (1) Using SMSLink - SMS Gateway API, such as SMS Gateway (HTTP), SMS Gateway (SOAP), SMS Gateway (JSON) or SMS Gateway (BULK)
+
+    (2) Using the output of this script, by writing the desired response below, if you enable this coresponding option in 2-Way SMS - 2-Way SMS Campaigns - Settings. In this case the SMSLink will read the script output and will send an SMS to the sender with the output text. Please note that the output should be plain text (you should not output any HTML code).
+
+  */
+
+  echo "Message Successfuly Received.";
+
+}
+else
+{
+  echo "Invalid Request.";
 }
     
 ?> 
