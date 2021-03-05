@@ -113,6 +113,7 @@ if ((isset($_GET["sender"])) and
 else
 {
   echo "Invalid Request.";
+  
 }
     
 ?> 
