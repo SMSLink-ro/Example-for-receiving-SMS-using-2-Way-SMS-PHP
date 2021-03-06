@@ -74,8 +74,10 @@ if ((isset($_GET["sender"])) and
     Write the SMS received to a text file
 
       Please note that this is for example purpose only and the file(s) below must be not be publicly accessible. If you will 
-      choose to write the SMS received to file(s) you must enable access restrictions and deny access from public to the respective 
+      choose to store the SMS received to file(s) you must enable access restrictions and deny access from public to the respective 
       file(s) and you must disable directory listing on the directory where the files are stored.
+
+      We recommend you storing the SMS received to a database.
 
   */
 
@@ -86,7 +88,7 @@ if ((isset($_GET["sender"])) and
             "Receiver ".$receiver.", ".
             "Network ID: ".$network_id.", ".
             "Network Name: ".$network_name.", ".
-            "Date / Time: ".date("d-m-Y H:i", $timestamp).", ".
+            "Date / Time: ".date("d-m-Y H:i:s", $timestamp).", ".
             "Message: ".$message.
             "\r\n"
     );
