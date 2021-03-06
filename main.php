@@ -54,10 +54,10 @@ if ((isset($_GET["sender"])) and
 
     The Network ID in which the Sender is located, with the following possible values:
     
-    1 for Vodafone Romania
-    2 for Orange Romania
-    3 for Telekom Romania Mobile / Telekom Romania
-    5 for Digimobil (RCS-RDS)
+      1 for Vodafone Romania
+      2 for Orange Romania
+      3 for Telekom Romania Mobile / Telekom Romania
+      5 for Digimobil (RCS-RDS)
 
   */
   $network_id = $_GET["network_id"]; 
