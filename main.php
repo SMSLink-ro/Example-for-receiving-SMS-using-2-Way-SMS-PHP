@@ -12,6 +12,9 @@
   (2) due to a returned HTTP Status Code between 400 and 599 (id. 404 Not Found, 500 Internal Server Error samd.), SMSLink will 
   retry resending the HTTP(S) request for 2 times within the following 2 hours.
 
+  SMS MO (Mobile Originated) are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET, HTTPS(S) POST
+  and HTTPS(S) POST as JSON, by changing the coresponding setting in your SMSLink account.
+
 */
 
 if ((isset($_GET["sender"])) and 
