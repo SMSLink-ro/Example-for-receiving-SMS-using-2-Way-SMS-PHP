@@ -8,7 +8,7 @@ SMSLink.ro allows you to send SMS to all mobile networks in Romania and also to 
 
 1. Create an account on [SMSLink.ro](https://www.smslink.ro/inregistrare/)
 2. Activate a dedicated or a shared shortcode using 2-Way SMS service, by accessing [SMSLink.ro / 2-Way SMS / 2-Way SMS Campaigns / Create Campaign](https://www.smslink.ro/sms/two-way/campaigns-list.php). 
-3. Configure a public URL endpoint where SMSLink.ro will send to you each SMS sent by the mobile subscribers to the shortcode. SMS MO (Mobile Originated) are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET, HTTPS(S) POST and HTTPS(S) POST as JSON, by changing the coresponding setting in your SMSLink account.
+3. Configure a public URL endpoint where SMSLink.ro will send to you each SMS sent by the mobile subscribers to the shortcode. SMS MO (Mobile Originated) are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET, HTTPS(S) POST and HTTPS(S) POST as JSON, by changing the corresponding setting in your SMSLink account.
 
 ## Parameters for the SMS MO (Mobile Originated)
 

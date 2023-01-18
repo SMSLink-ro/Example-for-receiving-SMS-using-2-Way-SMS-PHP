@@ -13,7 +13,7 @@
   retry resending the HTTP(S) request for 2 times within the following 2 hours.
 
   SMS MO (Mobile Originated) are sent by default as HTTPS(S) GET parameters, but you may choose between HTTPS(S) GET, HTTPS(S) POST
-  and HTTPS(S) POST as JSON, by changing the coresponding setting in your SMSLink account.
+  and HTTPS(S) POST as JSON, by changing the corresponding setting in your SMSLink account.
 
 */
 
